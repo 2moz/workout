@@ -7,11 +7,12 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class WtoolApplication {
-@Bean
+    @Bean
     BCryptPasswordEncoder bCryptPasswordEncoder(){
-    return new BCryptPasswordEncoder();
-}
+        return new BCryptPasswordEncoder();
+    }
     public static void main(String[] args) {
         SpringApplication.run(WtoolApplication.class, args);
     }
 }
+
